@@ -149,6 +149,7 @@ with col_form:
         step=1,
         key=f"nota_{cod_barragem}"
     )
+    st.caption("⬅️ **0:** Menos perigosa  |  **100:** Mais perigosa ➡️")
 
     if st.button("💾 Salvar e Sortear Próxima", type="primary", use_container_width=True):
         aba_avaliacoes = sheet.worksheet("avaliacoes")
