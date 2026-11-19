@@ -117,6 +117,11 @@ link_manual_preview = converter_link_drive_preview(URL_MANUAL)
 col_pdf, col_form = st.columns([0.65, 0.35], gap="large")
 
 with col_pdf:
+    st.info(
+        "Nota: As informações contendo 'valor provável' e 'categoria mais provável' eram desconhecidas e foram obtidas por ajuste.",
+        icon="💡"
+    )
+    
     aba_ficha, aba_manual = st.tabs([
         f"📄 Ficha Técnica — Barragem {cod_barragem}",
         "📖 Manual de Características"
